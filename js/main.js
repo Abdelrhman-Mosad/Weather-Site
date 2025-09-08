@@ -51,7 +51,7 @@ searchBtnElm.addEventListener('click', function(){
 async function getWetherInfo(loc='cairo'){
 
     let data,errorMsg ;
-    await fetch(`http://api.weatherapi.com/v1/forecast.json?key=d689c2be63b34323bfd114303250409&q=${loc}&days=3`)
+    await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d689c2be63b34323bfd114303250409&q=${loc}&days=3`)
     .then(function(respond){
         if((respond.status >= 200) && (respond.status<300)){
             return respond.json();
