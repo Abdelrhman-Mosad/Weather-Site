@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <meta name="keywords" content="Weather, Forcast">
+    <link rel="icon" href="./imgs/logo@2x.png">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">    
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg pt-3 pb-3 bg-prime1">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <img src="./imgs/logo@2x.png" alt="weather icon" class="w-50">
+                    <div class="d-flex flex-column text-white">
+                        <h2 class="fs-2">Weather</h2>
+                        <p class="fs-1">tagline goes here</p>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-white border border-1 border-danger me-3 rounded-5 px-3 active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white border border-1 border-danger me-3 rounded-5 px-3" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link text-white border border-1 border-danger me-3 rounded-5 px-3" href="#">Live Cameras</a></li>
+                    <li class="nav-item"><a class="nav-link text-white border border-1 border-danger me-3 rounded-5 px-3" href="#">Photos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white border border-1 border-danger me-3 rounded-5 px-3" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="py-5 bg-prime1 overflow-hidden">
+
+        <div class="Search container my-5">
+            <div class="input-group mb-3 position-relative">
+                <input type="text" class="form-control p-3 bg-sec2 text-white rounded-5" placeholder="Find Your Location" id="searchInput">
+                <p class="position-absolute start-0 top-100 ps-5 d-none text-danger fs-4" id="ErrorMSgLoc">Invalid location</p>
+                <button class="btn btn-primary px-5 py-2 rounded-pill position-absolute" type="button" id="searchBtn">Find</button>
+            </div>
+        </div>
+
+        <div class="weatherDp">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-md-4 d-flex flex-column" id="today_wp">
+                        <div class="col_wp text-white d-flex flex-column justify-content-center flex-grow-1 ">
+                            <div class="card_header d-flex justify-content-between bg-sec2 p-3 border border-1 border-secondary rounded-top-3">
+                                <span>ttt</span>
+                                <span>ttttt</span>
+                            </div>
+
+                            <div class="bg-prime2 ps-5 flex-grow-1 border border-1 border-secondary">
+                                <p class="location pt-2">Cairo</p>
+                                <p class="fs-5 pt-1">degree</p>
+                                <img src="" alt="">
+                                <p class="text-primary">conition</p>
+
+                                <ul class="list-unstyled d-flex">
+                                    <li class="me-4"><i class="fa-solid fa-umbrella"></i> <span>tt</span></li>
+                                    <li class="me-4"><i class="fa fa-wind"></i> <span>tt</span></li>
+                                    <li class="me-4"><i class="fa-solid fa-droplet"></i> <span>tt</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 d-flex flex-column">
+                        <div class="col_wp text-white d-flex flex-column justify-content-center flex-grow-1">
+                            <div class="card_header d-flex justify-content-center bg-sec1 p-3 border border-1 border-secondary rounded-top-3">
+                                <span>ttt</span>
+                            </div>
+
+                            <div class="bg-sec2 d-flex flex-column align-items-center justify-content-center flex-grow-1 border border-1 border-secondary">
+                                <p class="fs-4">degree</p>
+                                <p class="fs-3 mb-4">degree</p>
+                                <img src="" alt="">
+                                <p class="text-primary">ttt</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 d-flex flex-column">
+                        <div class="col_wp text-white d-flex flex-column justify-content-center flex-grow-1">
+                            <div class="card_header d-flex justify-content-center bg-sec2 p-3 border border-1 border-secondary rounded-top-3">
+                                <span>ttt</span>
+                            </div>
+
+                            <div class="bg-prime2 d-flex flex-column align-items-center justify-content-center flex-grow-1 border border-1 border-secondary">
+                                <p class="fs-4">degree</p>
+                                <p class="fs-3 mb-4">degree</p>
+                                <img src="" alt="">
+                                <p class="text-primary">ttt</p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="bg-sec2 p-5">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="input-group mb-3 position-relative">
+                        <input type="text" class="form-control p-3 bg-prime1 text-white rounded-5" placeholder="Enter Your Email to Subscribe">
+                        <button class="btn btn-primary px-5 py-2 rounded-pill position-absolute" type="button" id="subscribeBtn">Subscribe</button>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <ul class="list-unstyled d-flex ps-5">
+                        <li class="me-3"> <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                        <li class="me-3"> <a href=""><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                        <li class="me-3"> <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+                        <li class="me-3"> <a href=""><i class="fa-brands fa-github fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container text-white mt-4">
+            <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            <p>Powered by <a href="https://www.weatherapi.com/">WeatherAPI</a></p>  
+        </div>
+        
+    </footer>
+
+
+    <!-- external js need to link file ==>>  why in the end ? to make sure all html code is written  -->
+    <script src="./js/main.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

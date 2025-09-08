@@ -1,0 +1,80 @@
+
+/******************* Fonts *************************/
+.fs-1{
+    font-size: 10px !important;
+}
+
+.fs-2{
+    font-size: 16px !important;
+}
+
+.fs-3{
+    font-size: 18px !important;
+}
+
+
+.fs-4{
+    font-size: 24px !important;
+}
+
+
+.fs-5{
+    font-size: 90px !important;
+}
+
+/******************* colors *************************/
+.bg-prime1{
+    background-color: #1E202B !important;
+}
+
+.bg-prime2{
+    background-color: #323544 !important;
+}
+
+.bg-sec1{
+    background-color: #2D303D !important;
+}
+
+.bg-sec2{
+    background-color: #262936 !important;
+}
+
+
+
+
+
+/******************* NavBar *************************/
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--bs-blue) !important;
+    border-color: var(--bs-blue) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--bs-blue) !important;
+    border-color: var(--bs-blue) !important;
+}
+
+/******************* main *************************/
+
+main{
+    background-image: url('../imgs/banner.png');
+    background-repeat: no-repeat;
+}
+
+main .Search button , footer button{
+    right : 5px ;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 1 !important;
+    
+}
+
+input::placeholder{
+    color:#ffffffff !important;
+}
+
+
+main .Search input, footer input{
+    z-index: 0 !important;
+}
+
